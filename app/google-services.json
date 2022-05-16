@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627369598270",
+    "firebase_url": "https://royalchamberapp-default-rtdb.firebaseio.com",
+    "project_id": "royalchamberapp",
+    "storage_bucket": "royalchamberapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627369598270:android:716e458c4b783dff94a06f",
+        "android_client_info": {
+          "package_name": "com.example.royal_chamber_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627369598270-rc8qv5kijma93srbfmlendsf4ka5sbe3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLBeLzGMCnQKQzjs5_xHu0gyRkPar-H0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627369598270-rc8qv5kijma93srbfmlendsf4ka5sbe3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
