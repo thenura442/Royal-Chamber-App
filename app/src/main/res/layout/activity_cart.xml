@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayoutA6"
+    tools:context=".Cart">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainlayout">
+
+        <Button
+            android:id="@+id/menuA6"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="345dp"
+            android:layout_marginBottom="798dp"
+            android:background="@drawable/menuicon"
+android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="144dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="787dp"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:text="CART"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/menuA6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_cart"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_below="@+id/textView2"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.296" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="166dp"
+
+            android:layout_height="56dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="52dp"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:text="Total"
+android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_cart"
+            app:layout_constraintVertical_bias="0.129" />
+
+        <Button
+            android:id="@+id/paybutton2"
+            android:layout_width="316dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="33dp"
+            android:text="Checkout"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_viewA6"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
